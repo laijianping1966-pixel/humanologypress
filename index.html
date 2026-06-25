@@ -1,18 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Canadian Humanology Press Inc.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canadian Humanology Press Inc.</title>
+  <meta name="description" content="Canadian Humanology Press Inc. publishes original works on human nature, freedom, value, philosophy and humanology." />
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #111;
+      background: #f7f5f0;
+      line-height: 1.7;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 24px 8%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 90px 8%;
+      background: white;
+    }
+    .hero h1 {
+      font-size: 46px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 22px;
+      max-width: 780px;
+    }
+    .cn {
+      font-size: 21px;
+      color: #333;
+    }
+    section {
+      padding: 60px 8%;
+    }
+    h2 {
+      font-size: 32px;
+      border-bottom: 2px solid #111;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      margin-top: 20px;
+      border-left: 5px solid #111;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .book-title {
+      font-size: 26px;
+      font-weight: bold;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 30px 8%;
+      font-size: 14px;
+    }
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<h1>Canadian Humanology Press Inc.</h1>
+<header>
+  <nav>
+    <div class="logo">Canadian Humanology Press Inc.</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#author">Author</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
 
-<p>Exploring Human Nature, Freedom and Value</p>
+<div class="hero">
+  <h1>Canadian Humanology Press Inc.</h1>
+  <p>Exploring Human Nature, Freedom and Value</p>
+  <p class="cn">探索人性、自由与价值</p>
+  <p>
+    Publishing original works in philosophy, humanology, value theory,
+    freedom studies and civilization.
+  </p>
+</div>
 
-<p>探索人性、自由与价值</p>
+<section id="about">
+  <h2>About Humanology Press</h2>
+  <div class="card">
+    <p>
+      Canadian Humanology Press Inc. is an independent Canadian publishing
+      initiative dedicated to original inquiry into human nature, freedom,
+      value, desire, will and civilization.
+    </p>
+    <p>
+      加拿大人学出版社致力于出版关于人性、自由、价值、需要、欲望、意志与文明问题的原创思想作品。
+    </p>
+  </div>
+</section>
 
-<p>Website under construction.</p>
+<section id="books">
+  <h2>Books</h2>
+  <div class="card">
+    <div class="book-title">《论需要与欲望——〈人学原理〉第一部》</div>
+    <p><em>On Needs and Desires: Principles of Humanology, Volume I</em></p>
+    <p>
+      This work proposes “I want, therefore I am” as a fundamental proposition
+      for understanding human existence, action, value and freedom.
+    </p>
+    <p>
+      本书以“我要故我在”为核心命题，重新探讨人的需要、欲望、价值观、意志与自由。
+    </p>
+  </div>
+</section>
+
+<section id="author">
+  <h2>Author / Founder</h2>
+  <div class="card">
+    <p>
+      <strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc.
+      and the author of <em>On Needs and Desires</em>.
+    </p>
+    <p>
+      赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: laijianping1966@gmail.com</p>
+    <p>Website: humanologypress.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Canadian Humanology Press Inc. All rights reserved.
+</footer>
 
 </body>
 </html>
