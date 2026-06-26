@@ -10,12 +10,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  background: #f7f3eb;
-  color: #08264a;
-  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
-  line-height: 1.55;
+  background: #f6f1e8;
+  color: #061f3f;
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+  line-height: 1.42;
 }
 
 a {
@@ -25,202 +29,273 @@ a {
 
 header {
   background: #fffdf8;
-  border-bottom: 1px solid #d8cfbd;
+  border-bottom: 1px solid #d6cbb8;
 }
 
 .header-inner {
-  max-width: 1180px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 18px 28px 16px;
+  padding: 14px 26px 13px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 30px;
+  gap: 28px;
 }
 
 .logo h1 {
   margin: 0;
-  font-size: 35px;
+  font-size: 34px;
   line-height: 1.05;
   letter-spacing: 0.2px;
 }
 
 .logo p {
-  margin: 7px 0 0;
-  color: #74511d;
+  margin: 5px 0 0;
   font-size: 15px;
   font-style: italic;
+  color: #6e4b16;
 }
 
 nav {
   display: flex;
   gap: 24px;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 700;
   white-space: nowrap;
 }
 
 nav a:hover {
-  color: #8a5a16;
+  color: #b88925;
 }
 
 .hero {
   background:
-    linear-gradient(rgba(255, 250, 240, 0.86), rgba(255, 250, 240, 0.86)),
+    linear-gradient(rgba(255, 250, 240, 0.84), rgba(255, 250, 240, 0.84)),
     url("library.jpg") center/cover no-repeat;
-  border-bottom: 1px solid #d8cfbd;
+  border-bottom: 1px solid #d6cbb8;
 }
 
 .hero-inner {
-  max-width: 1180px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 46px 28px 44px;
+  padding: 52px 26px 54px;
 }
 
 .hero h2 {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   max-width: 760px;
-  font-size: 31px;
-  line-height: 1.28;
-  font-weight: normal;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.2px;
+}
+
+.gold-line {
+  width: 48px;
+  height: 3px;
+  background: #b88925;
+  margin: 18px 0 24px;
 }
 
 .hero p {
-  margin: 0 0 12px;
-  max-width: 820px;
-  font-size: 18px;
+  margin: 0 0 10px;
+  max-width: 790px;
+  font-size: 19px;
 }
 
 main {
-  max-width: 1180px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 46px 28px 60px;
+  padding: 34px 26px 44px;
+}
+
+section {
+  margin-bottom: 38px;
 }
 
 .section-title {
+  margin: 0 0 20px;
   font-size: 30px;
-  margin: 0 0 26px;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: 0.2px;
 }
 
 .featured {
   display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 34px;
+  grid-template-columns: 235px 1fr;
+  gap: 30px;
   align-items: start;
-  margin-bottom: 54px;
 }
 
 .cover-wrap {
   background: #fffdf8;
-  border: 1px solid #d6ccb8;
-  padding: 12px;
-  box-shadow: 0 5px 18px rgba(0,0,0,0.14);
+  border: 1px solid #d5c9b4;
+  padding: 10px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
 }
 
 .cover-wrap img {
-  width: 100%;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card {
   background: #fffdf8;
-  border: 1px solid #d6ccb8;
-  padding: 30px 34px;
+  border: 1px solid #d5c9b4;
+  padding: 24px 28px 25px;
 }
 
 .book-title {
-  font-size: 27px;
-  line-height: 1.35;
-  margin-bottom: 8px;
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 7px;
 }
 
 .subtitle {
-  font-size: 18px;
-  color: #6e4d1e;
+  font-size: 17px;
   font-style: italic;
-  margin-bottom: 22px;
+  color: #6d4b19;
+  margin-bottom: 16px;
+}
+
+.author {
+  margin: 0 0 15px;
+  font-size: 16.5px;
+  font-weight: 700;
 }
 
 .card p {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   font-size: 17px;
 }
 
-.meta {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid #e2d8c6;
+.book-note {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #e0d5c2;
   font-size: 16px;
 }
 
-.grid {
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #b88925;
+  font-size: 15.5px;
+  font-weight: 700;
+}
+
+.button.primary {
+  background: #b88925;
+  color: #fffdf8;
+}
+
+.button.secondary {
+  background: #fffdf8;
+  color: #061f3f;
+}
+
+.two-col {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  margin-top: 26px;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
 .info-box {
   background: #fffdf8;
-  border: 1px solid #d6ccb8;
-  padding: 24px 25px;
+  border: 1px solid #d5c9b4;
+  padding: 24px 28px;
 }
 
-.info-box h3 {
-  margin: 0 0 12px;
-  font-size: 22px;
+.info-box h2 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 1.15;
 }
 
 .info-box p {
-  margin: 0;
-  font-size: 16.5px;
+  margin: 0 0 12px;
+  font-size: 17px;
 }
 
+.founder,
 .contact {
   background: #fffdf8;
-  border: 1px solid #d6ccb8;
-  padding: 26px 30px;
-  margin-top: 30px;
+  border: 1px solid #d5c9b4;
+  padding: 24px 28px;
+}
+
+.founder h2,
+.contact h2 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.founder p,
+.contact p {
+  margin: 0 0 11px;
+  font-size: 17px;
 }
 
 footer {
-  background: #08264a;
-  color: #f8f3e8;
-  padding: 24px 28px;
-  text-align: center;
-  font-size: 14px;
+  background: #061f3f;
+  color: #f8f2e7;
+  border-top: 4px solid #b88925;
+}
+
+.footer-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 22px 26px;
+  font-size: 14.5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 850px) {
   .header-inner {
     display: block;
-  }
-
-  nav {
-    margin-top: 16px;
-    flex-wrap: wrap;
-    gap: 14px 20px;
+    padding: 14px 22px;
   }
 
   .logo h1 {
-    font-size: 29px;
+    font-size: 28px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  nav {
+    margin-top: 12px;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 15px;
   }
 
   .hero-inner {
-    padding: 34px 24px;
+    padding: 36px 22px 38px;
   }
 
   .hero h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .hero p {
-    font-size: 16.5px;
+    font-size: 17px;
   }
 
   main {
-    padding: 36px 24px 48px;
+    padding: 30px 22px 38px;
   }
 
   .featured {
@@ -228,19 +303,18 @@ footer {
   }
 
   .cover-wrap {
-    max-width: 230px;
+    width: 220px;
   }
 
-  .grid {
+  .two-col {
     grid-template-columns: 1fr;
   }
 
-  .card {
-    padding: 24px;
-  }
-
-  .book-title {
-    font-size: 23px;
+  .card,
+  .info-box,
+  .founder,
+  .contact {
+    padding: 22px;
   }
 }
 </style>
@@ -267,15 +341,16 @@ footer {
 
 <section class="hero">
   <div class="hero-inner">
-    <h2>Independent Publishing in Philosophy, Humanology and Value Theory</h2>
+    <h2>Publishing Original Works on Human Nature, Freedom and Value</h2>
+    <div class="gold-line"></div>
 
     <p>
       Canadian Humanology Press Inc. is an independent Canadian publishing initiative
-      devoted to original works on human nature, freedom, value and civilization.
+      devoted to philosophy, humanology, value theory and civilization studies.
     </p>
 
     <p>
-      加拿大人学出版社致力于出版关于人性、自由、价值与文明问题的原创思想作品。
+      探索人性、自由与价值，出版关于人学、哲学、价值与文明问题的原创思想作品。
     </p>
   </div>
 </section>
@@ -293,101 +368,89 @@ footer {
       <div class="card">
         <div class="book-title">《论需要与欲望——〈人学原理〉第一部》</div>
         <div class="subtitle">On Needs and Desires: Principles of Humanology, Volume I</div>
+        <p class="author">作者：赖建平</p>
 
         <p>
-          本书以“我要故我在”为核心命题，尝试突破传统“我思故我在”的理性主义框架，
-          从人的需要与欲望结构出发，重新回答“人是什么”“人为什么行动”
-          以及“自由从何而来”等根本问题。
+          《论需要与欲望》是一部关于人性、自由与价值的原创哲学著作。作者提出
+          “我要故我在”这一核心命题，以“需要—欲望—价值观—意志”四位一体的人性结构理论，
+          重新回答“人是什么”“人为什么行动”“自由从何而来”等哲学根本问题。
         </p>
 
         <p>
-          The book develops an original theory of human nature through the structure of
-          needs, desires, values and will, offering a philosophical account of freedom,
-          action and value.
+          本书系统区分“需要”与“欲望”，认为需要是人性的基础，欲望是行动的动力，
+          价值观决定选择的优先顺序，意志则完成最终决断并推动行动。由此，作者尝试建立一套
+          能够解释个体行为、价值生成、社会秩序与文明发展的新人学理论框架。
         </p>
 
-        <div class="meta">
-          <strong>Author:</strong> Jianping Lai<br />
-          <strong>Language:</strong> Chinese<br />
+        <p>
+          全书进一步提出“四要本体论”“四种意志”“八大自由”等原创理论，并分析财富欲、
+          权力欲、名誉欲、情色欲与自由欲等人类核心欲求，力图为理解人性、自由与文明提供新的思想起点。
+        </p>
+
+        <div class="book-note">
+          <strong>Language:</strong> Chinese &nbsp; | &nbsp;
           <strong>Publisher:</strong> Canadian Humanology Press Inc.
+        </div>
+
+        <div class="actions">
+          <a class="button primary" href="#contact">Contact the Press</a>
+          <a class="button secondary" href="#books">Coming Soon on Amazon</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <h2 class="section-title">About the Press</h2>
-
-    <div class="grid">
-      <div class="info-box">
-        <h3>Focus</h3>
-        <p>
-          Philosophy, humanology, value theory, freedom theory and civilization studies.
-        </p>
-      </div>
-
-      <div class="info-box">
-        <h3>Mission</h3>
-        <p>
-          To publish serious and original works that deepen the understanding of human nature,
-          value and human freedom.
-        </p>
-      </div>
-
-      <div class="info-box">
-        <h3>定位</h3>
-        <p>
-          以原创思想、独立精神和严肃学术写作为核心，推动人学与价值理论研究。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="founder">
-    <h2 class="section-title">Founder</h2>
-
-    <div class="card">
+  <section id="about-vision" class="two-col">
+    <div id="about" class="info-box">
+      <h2>About the Press</h2>
       <p>
-        Canadian Humanology Press Inc. was founded by Jianping Lai, an independent scholar
-        and author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.
+        Canadian Humanology Press Inc. is an independent Canadian publishing initiative
+        dedicated to original inquiry into human nature, freedom, value, desire, will
+        and civilization.
       </p>
-
       <p>
-        创办人赖建平长期从事人性、自由、价值与文明问题的独立思考与写作。
+        加拿大人学出版社致力于出版关于人性、自由、价值、需要、欲望、意志与文明问题的原创思想作品。
+      </p>
+    </div>
+
+    <div id="vision" class="info-box">
+      <h2>Our Vision</h2>
+      <p>
+        To advance original inquiry into human nature, value, freedom and civilization
+        through rigorous scholarship, independent thinking and responsible publishing.
+      </p>
+      <p>
+        以独立思想与严肃出版推动关于人性、价值、自由与文明问题的原创研究。
       </p>
     </div>
   </section>
 
-  <section id="vision">
-    <h2 class="section-title">Vision</h2>
-
-    <div class="card">
-      <p>
-        The press seeks to support works that are intellectually serious, philosophically
-        original and independent in spirit.
-      </p>
-
-      <p>
-        本社愿景是出版具有原创性、思想深度和文明关怀的作品，推动关于人是什么、
-        人如何自由以及价值如何生成的持续探索。
-      </p>
-    </div>
+  <section id="founder" class="founder">
+    <h2>Founder</h2>
+    <p>
+      <strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc.
+      and the author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.
+    </p>
+    <p>
+      赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。
+    </p>
   </section>
 
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact">
-      <p><strong>Email:</strong> laijianping1966@gmail.com</p>
-      <p><strong>Phone:</strong> +1 647-209-9639</p>
-      <p><strong>Website:</strong> humanologypress.ca</p>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> laijianping1966@gmail.com</p>
+    <p><strong>Phone:</strong> +1 647-209-9639</p>
+    <p><strong>Website:</strong> humanologypress.ca</p>
+    <p><strong>Location:</strong> Mississauga, Ontario, Canada</p>
   </section>
 
 </main>
 
 <footer>
-  © 2026 Canadian Humanology Press Inc. All rights reserved.
+  <div class="footer-inner">
+    <div>© 2026 Canadian Humanology Press Inc. All rights reserved.</div>
+    <div>Human Nature · Freedom · Value · Civilization</div>
+  </div>
 </footer>
 
 </body>
