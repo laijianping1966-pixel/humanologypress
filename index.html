@@ -14,17 +14,14 @@
         .hero .subtitle { font-size:21px; max-width:720px; margin-bottom:8px; }
         .container { max-width:1180px; margin:0 auto; padding:35px 5%; }
         h2 { font-size:27px; margin:0 0 14px 0; padding-bottom:8px; border-bottom:2px solid #c9a04c; }
-        
         .featured { display:flex; gap:40px; align-items:flex-start; }
-        .book-cover { flex: 0 0 45%; }   /* 加大到45% */
-        .book-cover img { width:100%; height:auto; box-shadow:0 10px 20px rgba(0,0,0,0.18); border-radius:2px; }
-        
+        .book-cover { flex: 0 0 45%; }
+        .book-cover img { width:100%; height:auto; box-shadow:0 10px 20px rgba(0,0,0,0.18); border-radius:3px; }
         .about-section { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
         .contact { font-size:14px; text-align:center; padding:22px; background:#f0ede6; border-top:1px solid #ddd; color:#444; }
-        
         @media (max-width:768px) { 
             .featured { flex-direction:column; } 
-            .book-cover { flex: none; max-width:280px; margin:0 auto 25px; } 
+            .book-cover { max-width:280px; margin:0 auto 25px; } 
         }
     </style>
 </head>
@@ -49,7 +46,7 @@
             <h2>Featured Book</h2>
             <div class="featured">
                 <div class="book-cover">
-                    <img src="我要故我在封面.png" alt="《论需要与欲望》 book cover">
+                    <img src="cover.png" alt="《论需要与欲望》 book cover">
                 </div>
                 <div style="flex:1;">
                     <h3 style="font-size:24px;margin:0 0 10px 0;">《论需要与欲望——〈人学原理〉第一部》</h3>
@@ -86,3 +83,12 @@
     </div>
 </body>
 </html>
+操作：
+
+复制上面全部代码。
+覆盖你的 index.html 文件。
+确保 cover.png 和 index.html 在同一个文件夹。
+双击 index.html 打开，用 Ctrl + F5 刷新。
+
+现在封面应该正常显示且大小合适了。
+如果还有问题，告诉我具体现象（比如空白、错位、还是小），我继续帮你调试。
