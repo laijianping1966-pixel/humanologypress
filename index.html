@@ -10,265 +10,222 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  background: #f6f1e8;
-  color: #061f3f;
-  font-family: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
-  font-size: 16px;
-  line-height: 1.42;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #001b3f;
+  background: #f6f2ea;
+  line-height: 1.45;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Header */
 header {
-  background: #fffdf8;
-  border-bottom: 1px solid #d7cbb7;
-}
-
-.header-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 11px 24px 10px;
+  background: #fff;
+  padding: 18px 6%;
+  border-bottom: 1px solid #ddd2bd;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 26px;
 }
 
-.brand {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  min-width: 0;
-}
-
-.brand h1 {
+.logo h1 {
   margin: 0;
-  font-size: 27px;
-  line-height: 1;
-  letter-spacing: 0.1px;
-  white-space: nowrap;
+  font-size: 34px;
+  line-height: 1.1;
 }
 
-.tagline {
-  font-size: 14px;
+.logo p {
+  margin: 8px 0 0;
+  font-size: 17px;
   font-style: italic;
-  color: #6f4a13;
-  white-space: nowrap;
+  color: #7a5318;
 }
 
-nav {
-  display: flex;
-  gap: 18px;
-  font-size: 15px;
-  font-weight: 700;
-  white-space: nowrap;
+nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #001b3f;
+  font-weight: bold;
+  font-size: 19px;
 }
 
-nav a:hover {
-  color: #b88925;
-}
-
-/* Hero */
 .hero {
   background:
-    linear-gradient(rgba(255, 250, 240, 0.91), rgba(255, 250, 240, 0.91)),
-    url("library.jpg") center/cover no-repeat;
-  border-bottom: 1px solid #d7cbb7;
-}
-
-.hero-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 30px 24px 32px;
+    linear-gradient(rgba(255,255,255,.70), rgba(246,242,234,.85)),
+    url("library.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 70px 6%;
+  border-bottom: 1px solid #ddd2bd;
 }
 
 .hero h2 {
-  margin: 0 0 8px;
-  font-size: 27px;
-  line-height: 1.25;
-}
-
-.hero p {
-  margin: 4px 0;
-  max-width: 820px;
-  font-size: 16.5px;
+  max-width: 850px;
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.12;
 }
 
 .gold-line {
-  width: 42px;
-  height: 2px;
-  background: #b88925;
-  margin: 12px 0 14px;
+  width: 58px;
+  height: 3px;
+  background: #bf922a;
+  margin: 24px 0 26px;
 }
 
-/* Main */
-main {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 28px 24px 40px;
+.hero p {
+  max-width: 760px;
+  font-size: 22px;
+  margin: 14px 0;
 }
 
 section {
-  margin-bottom: 30px;
+  padding: 38px 5%;
 }
 
 .section-title {
-  margin: 0 0 16px;
-  font-size: 26px;
-  line-height: 1.15;
+  font-size: 34px;
+  margin: 0 0 28px;
 }
 
-/* Featured Book */
 .featured {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 28px;
-  align-items: start;
+  grid-template-columns: 38% 62%;
+  gap: 34px;
+  align-items: center;
 }
 
 .cover-wrap {
-  background: #fffdf8;
-  border: 1px solid #d4c7b1;
-  padding: 9px;
-  box-shadow: 0 7px 20px rgba(0,0,0,0.12);
+  text-align: center;
 }
 
 .cover-wrap img {
-  width: 100%;
-  display: block;
+  width: 260px;
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 10px 28px rgba(0,0,0,.18);
 }
 
-.book-card,
-.info-box {
-  background: #fffdf8;
-  border: 1px solid #d4c7b1;
-  padding: 22px 26px;
+.card {
+  background: #fff;
+  border: 1px solid #ddd2bd;
+  padding: 38px 44px;
 }
 
 .book-title {
-  font-size: 23px;
-  line-height: 1.3;
-  margin-bottom: 6px;
+  font-size: 31px;
+  line-height: 1.35;
+  margin-bottom: 18px;
 }
 
 .subtitle {
-  font-size: 16.5px;
+  font-size: 22px;
   font-style: italic;
-  color: #6f4a13;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 
-.author {
-  margin: 0 0 12px;
-  font-size: 16px;
-  font-weight: 700;
+.card p {
+  font-size: 20px;
+  margin: 14px 0;
 }
 
-.book-card p,
-.info-box p {
-  margin: 0 0 10px;
-  font-size: 16.2px;
+.buttons {
+  margin-top: 26px;
 }
 
-.key-points {
-  margin: 10px 0 12px 20px;
-  padding: 0;
-  font-size: 16.2px;
+.btn {
+  display: inline-block;
+  padding: 13px 28px;
+  margin-right: 14px;
+  border: 1px solid #bf922a;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  color: #001b3f;
 }
 
-.key-points li {
-  margin-bottom: 5px;
+.btn.gold {
+  background: #bf922a;
+  color: #fff;
 }
 
-.meta {
-  margin-top: 13px;
-  padding-top: 10px;
-  border-top: 1px solid #e2d6c2;
-  font-size: 15.2px;
-}
-
-/* About / Vision */
-.two-col {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 22px;
+  gap: 28px;
+}
+
+.info-box {
+  background: #fff;
+  border: 1px solid #ddd2bd;
+  padding: 34px 42px;
 }
 
 .info-box h2 {
-  margin: 0 0 12px;
-  font-size: 25px;
-  line-height: 1.15;
+  font-size: 32px;
+  margin: 0 0 24px;
 }
 
-/* Contact */
-.contact-line {
-  font-size: 16.2px;
-  margin: 0;
+.info-box p {
+  font-size: 20px;
+  margin: 12px 0;
 }
 
-/* Footer */
+.founder {
+  background: #fff;
+  border: 1px solid #ddd2bd;
+  padding: 32px 42px;
+}
+
+.founder h2 {
+  font-size: 32px;
+  margin: 0 0 22px;
+}
+
+.founder p {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
 footer {
-  background: #061f3f;
-  color: #f8f2e7;
-  border-top: 3px solid #b88925;
+  margin-top: 30px;
+  padding: 16px 6%;
+  background: #fff;
+  border-top: 1px solid #ddd2bd;
+  font-size: 16px;
+  text-align: center;
 }
 
-.footer-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 15px 24px;
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
-  font-size: 14px;
+footer strong {
+  margin-left: 18px;
 }
 
 @media (max-width: 900px) {
-  .header-inner {
+  header {
     display: block;
-  }
-
-  .brand {
-    display: block;
-  }
-
-  .brand h1 {
-    font-size: 25px;
-    white-space: normal;
-  }
-
-  .tagline {
-    display: block;
-    margin-top: 5px;
-    white-space: normal;
   }
 
   nav {
-    margin-top: 10px;
-    flex-wrap: wrap;
+    margin-top: 16px;
   }
 
-  .featured {
+  nav a {
+    margin: 0 18px 0 0;
+  }
+
+  .featured,
+  .grid {
     grid-template-columns: 1fr;
   }
 
-  .cover-wrap {
-    width: 245px;
+  .hero h2 {
+    font-size: 36px;
   }
 
-  .two-col {
-    grid-template-columns: 1fr;
+  .hero p,
+  .card p,
+  .info-box p,
+  .founder p {
+    font-size: 18px;
   }
 }
 </style>
@@ -277,132 +234,78 @@ footer {
 <body>
 
 <header>
-  <div class="header-inner">
-    <div class="brand">
-      <h1>Canadian Humanology Press</h1>
-      <span class="tagline">Publishing Original Works on Human Nature, Freedom and Value</span>
-    </div>
-
-    <nav>
-      <a href="#books">Books</a>
-      <a href="#about">About</a>
-      <a href="#founder">Founder</a>
-      <a href="#vision">Vision</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="logo">
+    <h1>Canadian Humanology Press</h1>
+    <p>Publishing Original Works on Human Nature, Freedom and Value</p>
   </div>
+
+  <nav>
+    <a href="#books">Books</a>
+    <a href="#about">About</a>
+    <a href="#founder">Founder</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <h2>Original Philosophy, Humanology and Value Theory</h2>
-    <div class="gold-line"></div>
-
-    <p>
-      Canadian Humanology Press Inc. is an independent Canadian publishing initiative
-      devoted to human nature, freedom, value and civilization studies.
-    </p>
-
-    <p>
-      加拿大人学出版社致力于出版关于人性、自由、价值与文明问题的原创思想作品。
-    </p>
-  </div>
+  <h2>Publishing Original Works on Human Nature, Freedom and Value</h2>
+  <div class="gold-line"></div>
+  <p>Canadian Humanology Press Inc. is an independent Canadian publishing initiative devoted to philosophy, humanology, value theory and civilization studies.</p>
+  <p>探索人性、自由与价值，出版关于人学、哲学、价值与文明问题的原创思想作品。</p>
 </section>
-
-<main>
 
 <section id="books">
   <h2 class="section-title">Featured Book</h2>
 
   <div class="featured">
     <div class="cover-wrap">
-      <img src="cover.png" alt="《论需要与欲望》book cover">
+      <img src="cover.png" alt="《论需要与欲望》 book cover">
     </div>
 
-    <div class="book-card">
+    <div class="card">
       <div class="book-title">《论需要与欲望——〈人学原理〉第一部》</div>
       <div class="subtitle">On Needs and Desires: Principles of Humanology, Volume I</div>
-      <p class="author">作者：赖建平</p>
 
-      <p>
-        《论需要与欲望》是一部关于人性、自由与价值的原创哲学著作。作者提出
-        “我要故我在”这一核心命题，试图突破传统“我思故我在”的理性主义框架，
-        从人的需要与欲望出发，重新回答“人是什么”“人为什么行动”
-        以及“自由从何而来”等哲学根本问题。
-      </p>
+      <p><strong>作者：赖建平</strong></p>
 
-      <ul class="key-points">
-        <li>提出“需要—欲望—价值观—意志”的人性结构理论；</li>
-        <li>系统区分“需要”与“欲望”，重构人性分析框架；</li>
-        <li>提出“四要本体论”“四种意志”“八大自由”等原创理论；</li>
-        <li>分析财富欲、权力欲、名誉欲、情色欲与自由欲等核心欲求；</li>
-        <li>尝试解释个体行为、价值生成、社会秩序与文明发展。</li>
-      </ul>
+      <p>本书提出“我要故我在”（<em>I want, therefore I am</em>）这一核心命题，尝试突破传统“我思故我在”的理性主义框架，从人的需要与欲望出发，重新回答“人是什么”“人为什么行动”“自由从何而来”等哲学根本问题。</p>
 
-      <p>
-        本书力图为理解人性、自由、价值与文明提供新的思想起点，也为伦理学、
-        政治哲学、社会理论和文明研究提出一套新人学解释框架。
-      </p>
+      <p>全书系统构建“需要—欲望—价值观—意志”的人性结构理论，提出“四要本体论”“四种意志”“八大自由”等原创理论，对财富、权力、名誉、情色、自由等核心欲求进行系统分析，力图为理解人性、自由与文明提供新的理论框架。</p>
 
-      <div class="meta">
-        <strong>Language:</strong> Chinese &nbsp; | &nbsp;
-        <strong>Publisher:</strong> Canadian Humanology Press Inc.
+      <div class="buttons">
+        <a class="btn gold" href="#contact">Contact the Press</a>
+        <a class="btn" href="#">Coming Soon on Amazon</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="two-col">
-  <div id="about" class="info-box">
+<section class="grid">
+  <div class="info-box" id="about">
     <h2>About the Press</h2>
-    <p>
-      Canadian Humanology Press Inc. is an independent Canadian publishing initiative
-      dedicated to original inquiry into human nature, freedom, value, desire, will and civilization.
-    </p>
-    <p>
-      加拿大人学出版社致力于出版关于人性、自由、价值、需要、欲望、意志与文明问题的原创思想作品。
-    </p>
+    <p>Canadian Humanology Press Inc. is an independent Canadian publishing initiative dedicated to original inquiry into human nature, freedom, value, desire, will and civilization.</p>
+    <p>加拿大人学出版社致力于出版关于人性、自由、价值、需要、欲望、意志与文明问题的原创思想作品。</p>
   </div>
 
-  <div id="vision" class="info-box">
+  <div class="info-box" id="vision">
     <h2>Our Vision</h2>
-    <p>
-      To advance original inquiry into human nature, value, freedom and civilization
-      through serious scholarship, independent thinking and responsible publishing.
-    </p>
-    <p>
-      以独立思想与严肃出版推动关于人性、价值、自由与文明问题的原创研究。
-    </p>
+    <p>To advance original inquiry into human nature, value, freedom and civilization through rigorous scholarship, independent thinking and responsible publishing.</p>
+    <p>以独立思想与严肃出版推动关于人性、价值、自由与文明问题的原创研究。</p>
   </div>
 </section>
 
-<section id="founder" class="info-box">
-  <h2>Founder</h2>
-  <p>
-    <strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc.
-    and the author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.
-  </p>
-  <p>
-    赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。
-  </p>
-</section>
-
-<section id="contact" class="info-box">
-  <h2>Contact</h2>
-  <p class="contact-line">
-    <strong>Email:</strong> laijianping1966@gmail.com &nbsp; | &nbsp;
-    <strong>Phone:</strong> +1 647-209-9639 &nbsp; | &nbsp;
-    <strong>Location:</strong> Mississauga, Ontario, Canada
-  </p>
-</section>
-
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div>© 2026 Canadian Humanology Press Inc.</div>
-    <div>Human Nature · Freedom · Value · Civilization</div>
+<section id="founder">
+  <div class="founder">
+    <h2>Founder</h2>
+    <p><strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc. and the author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.</p>
+    <p>赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。</p>
   </div>
+</section>
+
+<footer id="contact">
+  <strong>Email:</strong> laijianping1966@gmail.com
+  <strong>Phone:</strong> +1 647-209-9639
 </footer>
 
 </body>
