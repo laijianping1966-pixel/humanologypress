@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canadian Humanology Press</title>
     <style>
-        body { font-family: Georgia, serif; margin:0; padding:0; background:#f8f6f0; color:#1f2a44; line-height:1.5; font-size:15.5px; }
+        body { font-family: Georgia, serif; margin:0; padding:0; background:#f8f6f0; color:#1f2a44; line-height:1.48; font-size:15.5px; }
         header { background:white; padding:20px 5%; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e5e0d8; }
         .logo { font-size:26px; font-weight:bold; }
         nav a { margin-left:22px; text-decoration:none; color:#1f2a44; font-size:15px; }
-        .hero { background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url('https://picsum.photos/id/1015/1920/580') center/cover; color:white; padding:70px 5% 60px; }
-        .hero h1 { font-size:42px; margin:0 0 12px 0; line-height:1.1; }
+        .hero { background:linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)), url('https://picsum.photos/id/1015/1920/580') center/cover no-repeat; color:white; padding:70px 5% 60px; }
+        .hero h1 { font-size:42px; margin:0 0 12px 0; }
         .hero .subtitle { font-size:21px; max-width:720px; margin-bottom:8px; }
         .container { max-width:1180px; margin:0 auto; padding:35px 5%; }
         h2 { font-size:27px; margin:0 0 14px 0; padding-bottom:8px; border-bottom:2px solid #c9a04c; }
-        .featured { display:flex; gap:38px; align-items:flex-start; }
-        .book-cover { flex: 0 0 38%; }
-        .book-cover img { width:100%; height:auto; box-shadow:0 8px 16px rgba(0,0,0,0.15); }
+        
+        .featured { display:flex; gap:40px; align-items:flex-start; }
+        .book-cover { flex: 0 0 45%; }   /* 加大到45% */
+        .book-cover img { width:100%; height:auto; box-shadow:0 10px 20px rgba(0,0,0,0.18); border-radius:2px; }
+        
         .about-section { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
         .contact { font-size:14px; text-align:center; padding:22px; background:#f0ede6; border-top:1px solid #ddd; color:#444; }
+        
         @media (max-width:768px) { 
             .featured { flex-direction:column; } 
-            .book-cover { flex:0 0 auto; max-width:260px; margin:0 auto 20px; } 
+            .book-cover { flex: none; max-width:280px; margin:0 auto 25px; } 
         }
     </style>
 </head>
@@ -46,11 +49,11 @@
             <h2>Featured Book</h2>
             <div class="featured">
                 <div class="book-cover">
-                    <img src="/home/workdir/attachments/我要故我在封面.png" alt="《论需要与欲望》 book cover">
+                    <img src="我要故我在封面.png" alt="《论需要与欲望》 book cover">
                 </div>
                 <div style="flex:1;">
                     <h3 style="font-size:24px;margin:0 0 10px 0;">《论需要与欲望——〈人学原理〉第一部》</h3>
-                    <p style="font-style:italic;margin:4px 0;">On Needs and Desires: Principles of Humanology, Volume I</p>
+                    <p style="font-style:italic;margin:4px 0 8px;">On Needs and Desires: Principles of Humanology, Volume I</p>
                     <p><strong>作者：赖建平</strong></p>
                     <p>本书提出“我要故我在”（I want, therefore I am）这一核心命题，尝试突破传统“我思故我在”的理性主义框架，从人的需要与欲望出发，重新回答“人是什么”“人为什么行动”“自由从何而来”等哲学根本问题。</p>
                     <p>全书系统构建“需要—欲望—价值观—意志”的人性结构理论，提出“四要本体论”“四种意志”“八大自由”等原创理论，对财富、权力、名誉、情色、自由等核心欲求进行系统分析，力图为理解人性、自由与文明提供新的理论框架。</p>
