@@ -5,164 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canadian Humanology Press</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:wght@700&display=swap');
-        
-        * {
+        body {
+            font-family: Georgia, serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f8f6f0; /* 稍亮的温暖米色 */
+            color: #1f2a44;
+            line-height: 1.5;
+            font-size: 15.5px;
         }
-        
-        body {
-            font-family: 'Noto Serif SC', serif;
-            line-height: 1.7;
-            color: #333;
-            background-color: #f8f4ed; /* 米黄色基调 */
-        }
-        
         header {
-            background: linear-gradient(rgba(245, 235, 220, 0.95), rgba(245, 235, 220, 0.95)), 
-                        url('https://picsum.photos/id/1015/1920/600') center/cover no-repeat;
-            padding: 20px 0;
-            position: relative;
-        }
-        
-        .nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            background: white;
+            padding: 20px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #e5e0d8;
         }
-        
-        .logo {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .nav-links a {
-            margin-left: 30px;
-            text-decoration: none;
-            color: #2c3e50;
-            font-weight: 500;
-        }
-        
+        .logo { font-size: 26px; font-weight: bold; }
+        nav a { margin-left: 22px; text-decoration: none; color: #1f2a44; font-size: 15px; }
         .hero {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 120px 20px 80px;
-            text-align: center;
-            color: #2c3e50;
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('https://picsum.photos/id/1015/1920/580') center/cover no-repeat; /* 书架背景 */
+            color: white;
+            padding: 70px 5% 60px;
+            text-align: left;
         }
-        
         .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.2rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            font-size: 42px;
+            margin: 0 0 12px 0;
+            line-height: 1.1;
         }
-        
-        .hero p {
-            font-size: 1.15rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
+        .hero .subtitle {
+            font-size: 21px;
+            max-width: 720px;
+            margin-bottom: 8px;
         }
-        
-        .featured {
-            max-width: 1200px;
+        .container {
+            max-width: 1180px;
             margin: 0 auto;
-            padding: 60px 20px;
-            display: flex;
-            gap: 60px;
-            align-items: flex-start;
-            background-color: #f8f4ed;
+            padding: 35px 5%;
         }
-        
-        .book-info {
-            flex: 1;
+        h2 {
+            font-size: 27px;
+            margin: 0 0 14px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #c9a04c;
         }
-        
-        .book-cover {
-            flex: 1;
-            max-width: 420px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            border-radius: 8px;
-            overflow: hidden;
+        .featured { display: flex; gap: 38px; align-items: flex-start; }
+        .book-cover img { width: 195px; box-shadow: 0 6px 14px rgba(0,0,0,0.12); }
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
         }
-        
-        .book-cover img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .book-title {
-            font-size: 1.85rem;
-            margin-bottom: 12px;
-            color: #2c3e50;
-        }
-        
-        footer {
+        .contact {
+            font-size: 14px;
             text-align: center;
-            padding: 40px 20px;
-            background-color: #2c3e50;
-            color: #ddd;
-            font-size: 0.95rem;
+            padding: 22px;
+            background: #f0ede6;
+            border-top: 1px solid #ddd;
+            color: #444;
         }
-        
-        @media (max-width: 900px) {
-            .featured {
-                flex-direction: column;
-                text-align: center;
-            }
-            .book-cover {
-                max-width: 320px;
-                margin: 0 auto;
-            }
+        @media (max-width: 768px) {
+            .featured, .about-section { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="nav">
-            <div class="logo">
-                Canadian Humanology Press<br>
-                <small style="font-size:0.85rem; font-weight:normal;">Publishing Original Works on Human Nature, Freedom and Value</small>
-            </div>
-            <div class="nav-links">
-                <a href="#">Books</a>
-                <a href="#">About</a>
-                <a href="#">Founder</a>
-                <a href="#">Vision</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        
-        <div class="hero">
-            <h1>Publishing Original Works on Human Nature,<br>Freedom and Value</h1>
-            <p>Canadian Humanology Press Inc. is an independent Canadian publishing initiative devoted to philosophy, humanology, value theory and civilization studies.</p>
-            <p style="font-size:1.05rem; opacity:0.95;">探索人性、自由与价值，出版关于人学、哲学、价值与文明问题的原创思想作品。</p>
-        </div>
+        <div class="logo">Canadian Humanology Press</div>
+        <nav>
+            <a href="#">Books</a>
+            <a href="#">About</a>
+            <a href="#">Founder</a>
+            <a href="#">Vision</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <section class="featured">
-        <div class="book-info">
-            <h2 class="book-title">《论需要与欲望——〈人学原理〉第一部》</h2>
-            <p><strong>On Needs and Desires: Principles of Humanology, Volume I</strong></p>
-            <p><strong>作者：赖建平</strong></p>
-            <p>本书提出“我要故我在”（I want, therefore I am）这一核心命题，尝试突破传统“我思故我在”的理性主义框架，从人的需要与欲望出发，重新回答“人是什么”“人为什么行动”“自由从何而来”等哲学根本问题。</p>
+    <div class="hero">
+        <div>
+            <h1>Publishing Original Works on Human Nature, Freedom and Value</h1>
+            <p class="subtitle">Canadian Humanology Press Inc. is an independent Canadian publishing initiative devoted to philosophy, humanology, value theory and civilization studies.</p>
+            <p class="subtitle" style="font-size:18px;">探索人性、自由与价值，出版关于人学、哲学、价值与文明问题的原创思想作品。</p>
         </div>
-        
-        <div class="book-cover">
-            <img src="https://grok.x.ai/attachments/lFD2Z" alt="《论需要与欲望》 封面" style="width:100%; height:auto;">
-        </div>
-    </section>
+    </div>
 
-    <footer>
-        © 2026 Canadian Humanology Press Inc. All Rights Reserved.<br>
-        Mississauga, Ontario, Canada
-    </footer>
+    <div class="container">
+        <!-- Featured Book -->
+        <section style="margin-bottom:45px;">
+            <h2>Featured Book</h2>
+            <div class="featured">
+                <div class="book-cover">
+                    <img src="https://via.placeholder.com/195x270/eee/333?text=Book+Cover" alt="《论需要与欲望》 book cover">
+                </div>
+                <div>
+                    <h3 style="font-size:24px;margin:0 0 10px 0;">《论需要与欲望——〈人学原理〉第一部》</h3>
+                    <p style="font-style:italic;margin:4px 0;">On Needs and Desires: Principles of Humanology, Volume I</p>
+                    <p><strong>作者：赖建平</strong></p>
+                    <p>本书提出“我要故我在”（I want, therefore I am）这一核心命题，尝试突破传统“我思故我在”的理性主义框架，从人的需要与欲望出发，重新回答“人是什么”“人为什么行动”“自由从何而来”等哲学根本问题。</p>
+                    <p>全书系统构建“需要—欲望—价值观—意志”的人性结构理论，提出“四要本体论”“四种意志”“八大自由”等原创理论，对财富、权力、名誉、情色、自由等核心欲求进行系统分析，力图为理解人性、自由与文明提供新的理论框架。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Vision -->
+        <section class="about-section" style="margin-bottom:50px;">
+            <div>
+                <h2>About the Press</h2>
+                <p>Canadian Humanology Press Inc. is an independent Canadian publishing initiative dedicated to original inquiry into human nature, freedom, value, desire, will and civilization.</p>
+                <p>加拿大人学出版社致力于出版关于人性、自由、价值、需要、欲望、意志与文明问题的原创思想作品。</p>
+            </div>
+            <div>
+                <h2>Our Vision</h2>
+                <p>To advance original inquiry into human nature, value, freedom and civilization through rigorous scholarship, independent thinking and responsible publishing.</p>
+                <p>以独立思想与严肃出版推动关于人性、价值、自由与文明问题的原创研究。</p>
+            </div>
+        </section>
+
+        <!-- Founder -->
+        <section style="margin-bottom:40px;">
+            <h2>Founder</h2>
+            <p><strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc. and the author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.</p>
+            <p>赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。</p>
+        </section>
+    </div>
+
+    <!-- 联系方式 - 单行小字 -->
+    <div class="contact">
+        Contact: laijianping1966@gmail.com | +1 647-209-9639
+    </div>
 </body>
 </html>
