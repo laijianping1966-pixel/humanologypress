@@ -15,15 +15,17 @@
         .container { max-width:1180px; margin:0 auto; padding:35px 5%; }
         h2 { font-size:27px; margin:0 0 14px 0; padding-bottom:8px; border-bottom:2px solid #c9a04c; }
         .featured { display:flex; gap:38px; align-items:flex-start; }
-        .book-cover { flex:0 0 32%; }
-        .book-cover img { width:100%; height:auto; box-shadow:0 6px 14px rgba(0,0,0,0.12); }
+        .book-cover { flex: 0 0 38%; }   /* 加大到38% */
+        .book-cover img { width:100%; height:auto; box-shadow:0 8px 16px rgba(0,0,0,0.15); }
         .about-section { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
         .contact { font-size:14px; text-align:center; padding:22px; background:#f0ede6; border-top:1px solid #ddd; color:#444; }
-        @media (max-width:768px) { .featured, .about-section { flex-direction:column; } .book-cover { flex:0 0 auto; max-width:240px; margin:0 auto; } }
+        @media (max-width:768px) { 
+            .featured { flex-direction:column; } 
+            .book-cover { flex:0 0 auto; max-width:260px; margin:0 auto 20px; } 
+        }
     </style>
 </head>
 <body>
-    <!-- Header & Hero 同之前 -->
     <header>
         <div class="logo">Canadian Humanology Press</div>
         <nav>
@@ -44,8 +46,8 @@
             <h2>Featured Book</h2>
             <div class="featured">
                 <div class="book-cover">
-                    <!-- 这里替换成你的真实书封图片链接 -->
-                    <img src="https://via.placeholder.com/260x360/ddd/222?text=论需要与欲望书封" alt="《论需要与欲望》 book cover">
+                    <!-- 替换成你的真实书封图片链接 -->
+                    <img src="https://via.placeholder.com/280x390/ddd/222?text=论需要与欲望书封" alt="《论需要与欲望》 book cover">
                 </div>
                 <div style="flex:1;">
                     <h3 style="font-size:24px;margin:0 0 10px 0;">《论需要与欲望——〈人学原理〉第一部》</h3>
@@ -57,6 +59,7 @@
             </div>
         </section>
 
+        <!-- 其他部分不变（About、Vision、Founder） -->
         <section class="about-section" style="margin-bottom:50px;">
             <div>
                 <h2>About the Press</h2>
