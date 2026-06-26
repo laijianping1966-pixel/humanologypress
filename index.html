@@ -1,316 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Canadian Humanology Press</title>
-  <meta name="description" content="Canadian Humanology Press publishes original works on human nature, freedom, value, philosophy and humanology." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Canadian Humanology Press</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
-      color: #172033;
-      background: #faf7f0;
-      line-height: 1.65;
-      font-size: 18px;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #ddd4c3;
-      padding: 20px 7%;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+body {
+  margin: 0;
+  background: #f7f3eb;
+  color: #08264a;
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+  line-height: 1.55;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-    .logo {
-      font-size: 29px;
-      font-weight: bold;
-      color: #10203a;
-    }
+header {
+  background: #fffdf8;
+  border-bottom: 1px solid #d8cfbd;
+}
 
-    .tagline {
-      font-size: 15px;
-      font-style: italic;
-      color: #6b5a35;
-      margin-top: 2px;
-    }
+.header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 28px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
 
-    nav a {
-      color: #172033;
-      text-decoration: none;
-      margin-left: 24px;
-      font-size: 17px;
-      font-weight: bold;
-    }
+.logo h1 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 1.05;
+  letter-spacing: 0.2px;
+}
 
-    nav a:hover {
-      color: #b58a2a;
-    }
+.logo p {
+  margin: 7px 0 0;
+  color: #74511d;
+  font-size: 15px;
+  font-style: italic;
+}
 
-    .hero {
-      background: linear-gradient(to right, rgba(250,247,240,0.97), rgba(250,247,240,0.78)),
-                  url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      padding: 72px 7%;
-      border-bottom: 1px solid #ddd4c3;
-    }
+nav {
+  display: flex;
+  gap: 24px;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+}
 
-    .hero h1 {
-      font-size: 42px;
-      line-height: 1.25;
-      max-width: 820px;
-      margin: 0 0 18px;
-      color: #10203a;
-    }
+nav a:hover {
+  color: #8a5a16;
+}
 
-    .hero p {
-      font-size: 20px;
-      max-width: 760px;
-      margin-bottom: 12px;
-    }
+.hero {
+  background:
+    linear-gradient(rgba(255, 250, 240, 0.86), rgba(255, 250, 240, 0.86)),
+    url("library.jpg") center/cover no-repeat;
+  border-bottom: 1px solid #d8cfbd;
+}
 
-    .gold-line {
-      width: 56px;
-      height: 3px;
-      background: #b58a2a;
-      margin: 18px 0 24px;
-    }
+.hero-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 46px 28px 44px;
+}
 
-    section {
-      padding: 56px 7%;
-    }
+.hero h2 {
+  margin: 0 0 18px;
+  max-width: 760px;
+  font-size: 31px;
+  line-height: 1.28;
+  font-weight: normal;
+}
 
-    .section-title {
-      font-size: 31px;
-      margin: 0 0 22px;
-      color: #10203a;
-    }
+.hero p {
+  margin: 0 0 12px;
+  max-width: 820px;
+  font-size: 18px;
+}
 
-    .featured {
-      display: grid;
-      grid-template-columns: 0.9fr 1.25fr;
-      gap: 42px;
-      align-items: center;
-    }
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 46px 28px 60px;
+}
 
-    .cover-wrap {
-      text-align: center;
-    }
+.section-title {
+  font-size: 30px;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
 
-    .cover-wrap img {
-      max-width: 360px;
-      width: 100%;
-      border-radius: 4px;
-      box-shadow: 0 18px 36px rgba(0,0,0,0.18);
-    }
+.featured {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 34px;
+  align-items: start;
+  margin-bottom: 54px;
+}
 
-    .card {
-      background: #ffffff;
-      padding: 34px;
-      border: 1px solid #ddd4c3;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-    }
+.cover-wrap {
+  background: #fffdf8;
+  border: 1px solid #d6ccb8;
+  padding: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.14);
+}
 
-    .book-title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 8px;
-      color: #10203a;
-    }
+.cover-wrap img {
+  width: 100%;
+  display: block;
+}
 
-    .subtitle {
-      font-size: 21px;
-      font-style: italic;
-      color: #4a4a4a;
-      margin-bottom: 18px;
-    }
+.card {
+  background: #fffdf8;
+  border: 1px solid #d6ccb8;
+  padding: 30px 34px;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 18px;
-      margin-right: 12px;
-      padding: 10px 24px;
-      background: #b58a2a;
-      color: white;
-      text-decoration: none;
-      border-radius: 2px;
-      font-size: 17px;
-      font-weight: bold;
-    }
+.book-title {
+  font-size: 27px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
 
-    .button.secondary {
-      background: transparent;
-      color: #10203a;
-      border: 1px solid #b58a2a;
-    }
+.subtitle {
+  font-size: 18px;
+  color: #6e4d1e;
+  font-style: italic;
+  margin-bottom: 22px;
+}
 
-    .two-column {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
+.card p {
+  margin: 0 0 14px;
+  font-size: 17px;
+}
 
-    .contact p {
-      margin: 10px 0;
-      font-size: 19px;
-    }
+.meta {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #e2d8c6;
+  font-size: 16px;
+}
 
-    footer {
-      background: #f0eadf;
-      color: #172033;
-      border-top: 1px solid #ddd4c3;
-      text-align: center;
-      padding: 24px 7%;
-      font-size: 16px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 26px;
+}
 
-    @media (max-width: 850px) {
-      .hero h1 {
-        font-size: 33px;
-      }
+.info-box {
+  background: #fffdf8;
+  border: 1px solid #d6ccb8;
+  padding: 24px 25px;
+}
 
-      .hero p {
-        font-size: 18px;
-      }
+.info-box h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
 
-      .featured,
-      .two-column {
-        grid-template-columns: 1fr;
-      }
+.info-box p {
+  margin: 0;
+  font-size: 16.5px;
+}
 
-      nav a {
-        display: inline-block;
-        margin: 10px 14px 0 0;
-      }
+.contact {
+  background: #fffdf8;
+  border: 1px solid #d6ccb8;
+  padding: 26px 30px;
+  margin-top: 30px;
+}
 
-      .logo {
-        font-size: 25px;
-      }
-    }
-  </style>
+footer {
+  background: #08264a;
+  color: #f8f3e8;
+  padding: 24px 28px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .header-inner {
+    display: block;
+  }
+
+  nav {
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+
+  .logo h1 {
+    font-size: 29px;
+  }
+
+  .hero-inner {
+    padding: 34px 24px;
+  }
+
+  .hero h2 {
+    font-size: 25px;
+  }
+
+  .hero p {
+    font-size: 16.5px;
+  }
+
+  main {
+    padding: 36px 24px 48px;
+  }
+
+  .featured {
+    grid-template-columns: 1fr;
+  }
+
+  .cover-wrap {
+    max-width: 230px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .book-title {
+    font-size: 23px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <div>
-      <div class="logo">Canadian Humanology Press</div>
-      <div class="tagline">Publishing Original Works on Human Nature, Freedom and Value</div>
+  <div class="header-inner">
+    <div class="logo">
+      <h1>Canadian Humanology Press</h1>
+      <p>Publishing Original Works on Human Nature, Freedom and Value</p>
     </div>
-    <div>
+
+    <nav>
       <a href="#books">Books</a>
       <a href="#about">About</a>
       <a href="#founder">Founder</a>
       <a href="#vision">Vision</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
-  <h1>Publishing Original Works on Human Nature, Freedom and Value</h1>
-  <div class="gold-line"></div>
-  <p>
-    Canadian Humanology Press Inc. is an independent Canadian publishing initiative
-    devoted to philosophy, humanology, value theory and civilization studies.
-  </p>
-  <p>
-    探索人性、自由与价值，出版关于人学、哲学、价值与文明问题的原创思想作品。
-  </p>
-</section>
+  <div class="hero-inner">
+    <h2>Independent Publishing in Philosophy, Humanology and Value Theory</h2>
 
-<section id="books">
-  <h2 class="section-title">Featured Book</h2>
+    <p>
+      Canadian Humanology Press Inc. is an independent Canadian publishing initiative
+      devoted to original works on human nature, freedom, value and civilization.
+    </p>
 
-  <div class="featured">
-    <div class="cover-wrap">
-      <img src="cover.png" alt="《论需要与欲望》book cover" />
-    </div>
-
-    <div class="card">
-      <div class="book-title">《论需要与欲望——〈人学原理〉第一部》</div>
-      <div class="subtitle">On Needs and Desires: Principles of Humanology, Volume I</div>
-
-      <p><strong>作者：赖建平</strong></p>
-
-      <p>
-        本书提出“我要故我在”（<em>I want, therefore I am</em>）这一核心命题，尝试突破传统
-        “我思故我在”的理性主义框架，从人的需要与欲望出发，重新回答“人是什么”
-        “人为什么行动”“自由从何而来”等哲学根本问题。
-      </p>
-
-      <p>
-        全书系统构建“需要—欲望—价值观—意志”的人性结构理论，提出“四要本体论”
-        “四种意志”“八大自由”等原创理论，对财富、权力、名誉、情色、自由等核心欲求
-        进行了系统分析，力图为理解人性、自由与文明提供新的理论框架。
-      </p>
-
-      <a class="button" href="#contact">Contact the Press</a>
-      <a class="button secondary" href="#">Coming Soon on Amazon</a>
-    </div>
+    <p>
+      加拿大人学出版社致力于出版关于人性、自由、价值与文明问题的原创思想作品。
+    </p>
   </div>
 </section>
 
-<section id="about">
-  <div class="two-column">
-    <div class="card">
-      <h2 class="section-title">About the Press</h2>
-      <p>
-        Canadian Humanology Press Inc. is an independent Canadian publishing initiative
-        dedicated to original inquiry into human nature, freedom, value, desire, will and civilization.
-      </p>
-      <p>
-        加拿大人学出版社致力于出版关于人性、自由、价值、需要、欲望、意志与文明问题的原创思想作品。
-      </p>
-    </div>
+<main>
 
-    <div class="card" id="vision">
-      <h2 class="section-title">Our Vision</h2>
-      <p>
-        To advance original inquiry into human nature, value, freedom and civilization
-        through rigorous scholarship, independent thinking and responsible publishing.
-      </p>
-      <p>
-        以独立思想与严肃出版推动关于人性、价值、自由与文明问题的原创研究。
-      </p>
-    </div>
-  </div>
-</section>
+  <section id="books">
+    <h2 class="section-title">Featured Book</h2>
 
-<section id="founder">
-  <div class="card">
+    <div class="featured">
+      <div class="cover-wrap">
+        <img src="cover.png" alt="《论需要与欲望》book cover" />
+      </div>
+
+      <div class="card">
+        <div class="book-title">《论需要与欲望——〈人学原理〉第一部》</div>
+        <div class="subtitle">On Needs and Desires: Principles of Humanology, Volume I</div>
+
+        <p>
+          本书以“我要故我在”为核心命题，尝试突破传统“我思故我在”的理性主义框架，
+          从人的需要与欲望结构出发，重新回答“人是什么”“人为什么行动”
+          以及“自由从何而来”等根本问题。
+        </p>
+
+        <p>
+          The book develops an original theory of human nature through the structure of
+          needs, desires, values and will, offering a philosophical account of freedom,
+          action and value.
+        </p>
+
+        <div class="meta">
+          <strong>Author:</strong> Jianping Lai<br />
+          <strong>Language:</strong> Chinese<br />
+          <strong>Publisher:</strong> Canadian Humanology Press Inc.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About the Press</h2>
+
+    <div class="grid">
+      <div class="info-box">
+        <h3>Focus</h3>
+        <p>
+          Philosophy, humanology, value theory, freedom theory and civilization studies.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Mission</h3>
+        <p>
+          To publish serious and original works that deepen the understanding of human nature,
+          value and human freedom.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>定位</h3>
+        <p>
+          以原创思想、独立精神和严肃学术写作为核心，推动人学与价值理论研究。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder">
     <h2 class="section-title">Founder</h2>
-    <p>
-      <strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc.
-      and the author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.
-    </p>
-    <p>
-      赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。
-    </p>
-  </div>
-</section>
 
-<section id="contact">
-  <div class="card contact">
+    <div class="card">
+      <p>
+        Canadian Humanology Press Inc. was founded by Jianping Lai, an independent scholar
+        and author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.
+      </p>
+
+      <p>
+        创办人赖建平长期从事人性、自由、价值与文明问题的独立思考与写作。
+      </p>
+    </div>
+  </section>
+
+  <section id="vision">
+    <h2 class="section-title">Vision</h2>
+
+    <div class="card">
+      <p>
+        The press seeks to support works that are intellectually serious, philosophically
+        original and independent in spirit.
+      </p>
+
+      <p>
+        本社愿景是出版具有原创性、思想深度和文明关怀的作品，推动关于人是什么、
+        人如何自由以及价值如何生成的持续探索。
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <p><strong>Email:</strong> laijianping1966@gmail.com</p>
-    <p><strong>Phone:</strong> +1 647-209-9639</p>
-    <p><strong>Website:</strong> https://humanologypress.com</p>
-    <p><strong>Location:</strong> Toronto / Mississauga, Ontario, Canada</p>
-  </div>
-</section>
+
+    <div class="contact">
+      <p><strong>Email:</strong> laijianping1966@gmail.com</p>
+      <p><strong>Phone:</strong> +1 647-209-9639</p>
+      <p><strong>Website:</strong> humanologypress.ca</p>
+    </div>
+  </section>
+
+</main>
 
 <footer>
   © 2026 Canadian Humanology Press Inc. All rights reserved.
