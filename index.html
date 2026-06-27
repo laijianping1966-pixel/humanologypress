@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canadian Humanology Press</title>
     <style>
-        body { font-family: Georgia, serif; margin:0; padding:0; background:#f8f6f0; color:#1f2a44; line-height:1.12; font-size:15.5px; } /* 行间距再缩小 */
+        body { font-family: Georgia, serif; margin:0; padding:0; background:#f8f6f0; color:#1f2a44; line-height:1.12; font-size:15.5px; }
         header { background:white; padding:20px 5%; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e5e0d8; }
         .logo { font-size:26px; font-weight:bold; }
         nav a { margin-left:22px; text-decoration:none; color:#1f2a44; font-size:15px; }
        
-        /* 背景图拉长 + 保持缩小 */
         .hero {
             background:linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)), url('https://picsum.photos/id/1015/1920/580') center/cover no-repeat;
             color:white;
-            padding:100px 5% 90px; /* 往下拉长 */
+            padding:100px 5% 90px;
             transform: scale(0.8);
             transform-origin: top center;
             margin: 0 auto;
@@ -24,10 +23,10 @@
         .hero h1 { font-size:33.6px; margin:0 0 12px 0; }
         .hero .subtitle { font-size:16.8px; max-width:720px; margin-bottom:8px; }
        
-        .container { max-width:1180px; margin:0 auto; padding:15px 5% 35px; } /* 减少上方空挡，让Featured Book上移 */
+        /* 大幅减少上方空挡，让 Featured Book 上移 */
+        .container { max-width:1180px; margin:0 auto; padding:8px 5% 35px; }
         
-        /* 标题字号缩小 */
-        h2 { font-size:23.5px; margin:25px 0 12px 0; padding-bottom:6px; border-bottom:2px solid #c9a04c; }
+        h2 { font-size:23.5px; margin:20px 0 12px 0; padding-bottom:6px; border-bottom:2px solid #c9a04c; }
         
         .featured { display:flex; gap:50px; align-items:flex-start; }
         .book-cover { flex: 0 0 45%; }
@@ -39,6 +38,7 @@
             .featured { flex-direction:column; }
             .book-cover { max-width:280px; margin:0 auto 25px; }
             .hero { transform: scale(0.85); padding:70px 5% 60px; }
+            .container { padding:5px 5% 25px; }
         }
     </style>
 </head>
