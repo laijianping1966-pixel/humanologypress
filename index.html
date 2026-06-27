@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canadian Humanology Press</title>
     <style>
-        body { font-family: Georgia, serif; margin:0; padding:0; background:#f8f6f0; color:#1f2a44; line-height:1.48; font-size:15.5px; }
+        body { font-family: Georgia, serif; margin:0; padding:0; background:#f8f6f0; color:#1f2a44; line-height:1.184; font-size:15.5px; } /* 行间距缩小约20% */
         header { background:white; padding:20px 5%; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e5e0d8; }
         .logo { font-size:26px; font-weight:bold; }
         nav a { margin-left:22px; text-decoration:none; color:#1f2a44; font-size:15px; }
-        .hero { background:linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)), url('https://picsum.photos/id/1015/1920/580') center/cover no-repeat; color:white; padding:70px 5% 60px; }
-        .hero h1 { font-size:42px; margin:0 0 12px 0; }
-        .hero .subtitle { font-size:21px; max-width:720px; margin-bottom:8px; }
+        
+        /* 背景图缩小20% */
+        .hero { 
+            background:linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)), url('https://picsum.photos/id/1015/1920/580') center/cover no-repeat; 
+            color:white; 
+            padding:56px 5% 48px; /* 相应缩小padding */
+            transform: scale(0.8);
+            transform-origin: top center;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        
+        .hero h1 { font-size:33.6px; margin:0 0 12px 0; } /* 副标题主行字体缩小 */
+        .hero .subtitle { font-size:16.8px; max-width:720px; margin-bottom:8px; }
+        
         .container { max-width:1180px; margin:0 auto; padding:35px 5%; }
         h2 { font-size:27px; margin:0 0 14px 0; padding-bottom:8px; border-bottom:2px solid #c9a04c; }
         .featured { display:flex; gap:40px; align-items:flex-start; }
@@ -19,9 +31,10 @@
         .book-cover img { width:100%; height:auto; box-shadow:0 10px 20px rgba(0,0,0,0.18); border-radius:3px; }
         .about-section { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
         .contact { font-size:14px; text-align:center; padding:22px; background:#f0ede6; border-top:1px solid #ddd; color:#444; }
-        @media (max-width:768px) { 
-            .featured { flex-direction:column; } 
-            .book-cover { max-width:280px; margin:0 auto 25px; } 
+        @media (max-width:768px) {
+            .featured { flex-direction:column; }
+            .book-cover { max-width:280px; margin:0 auto 25px; }
+            .hero { transform: scale(0.85); } /* 手机端稍作调整 */
         }
     </style>
 </head>
@@ -33,7 +46,6 @@
             <a href="#">Books</a><a href="#">About</a><a href="#">Founder</a><a href="#">Vision</a><a href="#">Contact</a>
         </nav>
     </header>
-
     <div class="hero">
         <div>
             <h1>Publishing Original Works on Human Nature, Freedom and Value</h1>
@@ -41,7 +53,6 @@
             <p class="subtitle" style="font-size:18px;">探索人性、自由与价值，出版关于人学、哲学、价值与文明问题的原创思想作品。</p>
         </div>
     </div>
-
     <div class="container">
         <section style="margin-bottom:45px;">
             <h2>Featured Book</h2>
@@ -60,7 +71,6 @@
                 </div>
             </div>
         </section>
-
         <!-- About the Press 和 Our Vision 部分不变 -->
         <section class="about-section" style="margin-bottom:50px;">
             <div>
@@ -74,14 +84,12 @@
                 <p>以独立思想与严肃出版推动关于人性、价值、自由与文明问题的原创研究。</p>
             </div>
         </section>
-
         <section style="margin-bottom:40px;">
             <h2>Founder</h2>
             <p><strong>Jianping Lai</strong> is the founder of Canadian Humanology Press Inc. and the author of <em>On Needs and Desires: Principles of Humanology, Volume I</em>.</p>
             <p>赖建平，加拿大华裔独立学者，加拿大人学出版社创办人，《论需要与欲望》作者。</p>
         </section>
     </div>
-
     <div class="contact">
         Contact: laijianping1966@gmail.com | +1 647-209-9639
     </div>
